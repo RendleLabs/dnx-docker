@@ -8,7 +8,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 	&& apt-get install -y mono-devel ca-certificates-mono unzip \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV DNX_VERSION 1.0.0-beta7
+ENV DNX_VERSION 1.0.0-beta8
 ENV DNX_USER_HOME /opt/dnx
 
 RUN curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_USER_HOME=$DNX_USER_HOME DNX_BRANCH=v$DNX_VERSION sh
