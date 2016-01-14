@@ -4,6 +4,6 @@ COPY project.json /tmp
 
 WORKDIR /tmp
 
-RUN dnu restore && rm project.json project.lock.json
+RUN dnu restore && rm /tmp/project.json /tmp/project.lock.json
 
 WORKDIR /
